@@ -5,6 +5,19 @@ body {
     background-color: #f4f4f4;
 }
 
+/* tombol tambah */
+.tambah a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #17ea14;
+    border-radius: 5px;
+}
+
+.tambah:hover a {
+    background-color: #218838;
+}
+
 .header {
     margin-top: -20px;
     width: 100%;
@@ -27,17 +40,20 @@ body {
 
 /* Sidebar */
 .sidebar {
+    margin-top: 20px;
+    margin-left: 40px;
     width: 200px;
     background: #1d2934;
     color: #fff;
     padding: 20px;
-    height: 100vh;
+    height: 710px;
     position: fixed;
+    border-radius: 10px
 }
 
 .sidebar h2 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 27px;
     color: #ecf0f1;
 }
@@ -45,10 +61,11 @@ body {
 .sidebar ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 .sidebar ul li {
-    margin: 60px 0;
+    margin: 55px 0;
 }
 
 .sidebar ul li a {
@@ -171,6 +188,15 @@ body {
     color: #555;
 }
 
+tbody td img {
+    max-width: 120px;
+    /* Biarkan gambar menyesuaikan dengan kolom */
+    max-height: 200px;
+    /* Tetapkan tinggi maksimum */
+    object-fit: contain;
+    /* Hindari potongan gambar */
+}
+
 .container table th {
     background: linear-gradient(to right, #6a11cb, #2575fc);
     color: #fff;
@@ -209,6 +235,7 @@ body {
     margin-right: 5px;
     font-size: 14px;
 }
+
 
 .btn-edit {
     background-color: #2980b9;
@@ -252,7 +279,6 @@ body {
 }
 
 .pagination a {
-    text-decoration: none;
     color: #333;
     padding: 5px 10px;
     border: 1px solid #ddd;
